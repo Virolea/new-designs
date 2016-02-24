@@ -1,52 +1,40 @@
-.pano-viewer {
-  background: #F7F7F7;
+.pano-container {
+  margin: 10px;
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  h1 {
-    padding-left: 20px;
-    color: rgba(0,0,0,0.6);
-  }
 }
-.pano-info {
-  padding: 5px;
-  color: rgba(0,0,0,0.6);
-  h4 {
-    margin-top: 0;
-    color: rgba(0,0,0,0.9);
-  }
-  h5 {
-    color: rgba(0,0,0,0.8);
-    margin-top: 2px;
-    margin-bottom: 2px;
+.card-link {
+  text-decoration: none;
+  color: rgba(0,0,0,0.7);
+  &:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
   }
 }
 .pano-photo {
-  width: 100%;
-}
-.pano-photo img {
-  width: 100%;
-}
-.pano-zoom {
-  margin-top: 20px;
-  height: 400px;
-  background-image: image-url('images/pano4.JPG');
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: left;
-}
-.user-photo {
+  position: relative;
   img {
     width: 100%;
   }
 }
-.user-contact {
-  background: #F7F7F7;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-  padding-bottom: 20px;
+.pano-hover {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  h2 {
+    margin-top: 0;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.pano-info {
+  margin-left: 10px;
 }

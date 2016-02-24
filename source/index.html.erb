@@ -1,48 +1,22 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-6 col-md-offset-2">
-      <div class="pano-viewer">
-        <div class="pano-info">
-        <h4>YOSEMITE</h4>
-        <h5><%= image_tag "moi.jpg", class: "avatar" %>  Vincent Rolea</h5>
-        </div>
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <div class="pano-container">
         <div class="pano-photo">
-          <%= image_tag "pano4.JPG" %>
+          <%= image_tag "pano4.JPG"%>
+          <div class="pano-hover">
+            <% link_to '#', class: "card-link" do %>
+              <div>
+                <h2>YOSEMITE</h2>
+                <i class="fa fa-map-marker">   Yosemite National Park</i><br>
+                <i class="fa fa-camera retro">   Iphone 6S</i><br>
+                <i class="fa fa-calendar">   July 2015</i>
+              </div>
+            <% end %>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-6 col-md-offset-2">
-      <div class="pano-viewer">
         <div class="pano-info">
-        <h4>AACHEN</h4>
-        <h5><%= image_tag "moi.jpg", class: "avatar" %>  Vincent Rolea</h5>
-        </div>
-        <div class="pano-photo">
-          <% link_to '#' do %>
-            <%= image_tag "pano1.JPG" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-6 col-md-offset-2">
-      <div class="pano-viewer">
-        <div class="pano-info">
-        <h4>LE WAGON</h4>
-        <h5><%= image_tag "moi.jpg", class: "avatar" %>  Vincent Rolea</h5>
-        </div>
-        <div class="pano-photo">
-          <%= image_tag "pano2.JPG" %>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-6 col-md-offset-2">
-      <div class="pano-viewer">
-        <div class="pano-info">
-        <h4>Shanghaï</h4>
-        <h5><%= image_tag "moi.jpg", class: "avatar" %>  Vincent Rolea</h5>
-        </div>
-        <div class="pano-photo">
-          <%= image_tag "pano3.JPG" %>
+          <h4><%= image_tag "moi.jpg", class: "avatar" %>  Vincent Rolea</h4>
         </div>
       </div>
     </div>
